@@ -12,3 +12,4 @@
 /Users/shishirsmac/Personal/C#/DesignPattern/obj/Debug/net9.0/DesignPattern.pdb
 /Users/shishirsmac/Personal/C#/DesignPattern/obj/Debug/net9.0/DesignPattern.genruntimeconfig.cache
 /Users/shishirsmac/Personal/C#/DesignPattern/obj/Debug/net9.0/ref/DesignPattern.dll
+/Users/shishirsmac/Personal/C#/DesignPattern/obj/Debug/net9.0/DesignPattern.sourcelink.json
