@@ -3,8 +3,10 @@ using System;
 using FactoryDesignPattern;
 using AbstractFactoryDesignPattern;
 using BuilderDesignPattern;
+using AdapterDesignPattern;
 class Program{
-    static void Main(string[] args){
+    static void Main(string[] args)
+    {
         // Factory Pattern
         // ReportGeneratorFactory objReportGeneratorFactory = new ReportGeneratorFactory();
         // IReportGenerator objGetReportGenerator = objReportGeneratorFactory.GetReportGenerator("xml");
@@ -19,12 +21,25 @@ class Program{
 
         // Builder Design Pattern
 
-        ICarBuilder _carBuilder = new SportsCarBuilder();
-        CarDirector _carDirector = new CarDirector(_carBuilder);
+        // ICarBuilder _carBuilder = new SportsCarBuilder();
+        // CarDirector _carDirector = new CarDirector(_carBuilder);
 
-        _carDirector.BuildCar();
-        Car car = _carDirector.GetCar();
-        car.ShowSpecification();
+        // _carDirector.BuildCar();
+        // Car car = _carDirector.GetCar();
+        // car.ShowSpecification();
+
+
+        // Adpater Design Pattern
+
+        static void ClientCode(IPrinter printer)
+        {
+            printer.Print();
+        }
+        
+            // Using the adapter
+        IPrinter adapter = new PrinterAdapter();    
+        ClientCode(adapter);
+
 
 
     }
